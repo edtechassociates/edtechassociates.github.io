@@ -3,7 +3,7 @@ function sendMail() {
          type: "POST",
          url: "https://mandrillapp.com/api/1.0/messages/send.json",
          data: {
-             key: "_UhvviMfxE6oL0g8St7k9Q",
+             key: "8RkJemtcZFbYxmVWtmhfYw",
              message: {
                  from_email: $('#email').val(),
                  to: [{
