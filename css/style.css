@@ -65,7 +65,7 @@ strong{
 }
 /* additional sections */
 #home {
-  background: url(../images/home.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/home.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -105,7 +105,7 @@ strong{
   opacity: 0.85;
 }
 #contact {
-  background: url(../images/indianapolis.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/indianapolis.jpg) no-repeat center center fixed; 
   display: table;
   height: 800px;
   position: relative;
@@ -157,7 +157,7 @@ footer .fa:hover {
   color: #68aa98;
 }
 #david {
-  background: url(../images/david_prof.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/david_prof.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -168,7 +168,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #ken {
-  background: url(../images/ken_prof.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/ken_prof.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -179,7 +179,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #kevin {
-  background: url(../images/kevin_prof.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/kevin_prof.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -190,7 +190,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #sean {
-  background: url(../images/sean_prof.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/sean_prof.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -201,7 +201,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #connie {
-  background: url(../images/connie_prof.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/connie_prof.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -212,7 +212,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #mel {
-  background: url(../images/mel_prof.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/mel_prof.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -223,7 +223,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #mark {
-  background: url(../images/mark_prof.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/mark_prof.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -234,7 +234,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #brett {
-  background: url(../images/brett_prof.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/brett_prof.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -245,7 +245,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #anton {
-  background: url(../images/anton_prof.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/anton_prof.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -256,7 +256,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #megan {
-  background: url(../images/megan_prof.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/megan_prof.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
