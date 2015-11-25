@@ -1,9 +1,11 @@
+$('#emailStatus').hide();
+
 function sendMail() {
      $.ajax({
          type: "POST",
          url: "https://mandrillapp.com/api/1.0/messages/send.json",
          data: {
-             key: "8RkJemtcZFbYxmVWtmhfYw",
+             key: "_UhvviMfxE6oL0g8St7k9Q",
              message: {
                  from_email: $('#email').val(),
                  to: [{
@@ -16,4 +18,17 @@ function sendMail() {
              }
          }
      })
+     .done(function () {
+         $('#emailStatus').html("Email has successfully sent!");
+         $('#emailForm').trigger("reset");
+     })
+     .fail(function() {
+         $('#emailStatus').html("Something went wrong.");
+
+     })
+     .always(function() {
+         $('#emailStatus').show();
+     })
+
+
  }
