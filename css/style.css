@@ -35,6 +35,26 @@ address {
 .pad-section img {
   width: 100%;
 }
+.navbar {
+  background-color: #dadded;
+  border-color: #9f8ec4;
+}
+.navbar li {
+  color: #214a87;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #68aa98;
+  border-color: #4a907d;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #41796a;
+  border-color: #68aa98;
+}
+hr {
+  border-color: #9faec4;
+}
 
 /* vertical-centered text */
 .text-vcenter {
@@ -74,6 +94,12 @@ strong{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color: #ffffff;
+}
+#home .white-bg {
+  background: rgba(238,234,255,0.60);
+  border-radius: 5px;
+  padding: 20px;
 }
 #our-mission {
   background-color: #214a87;
@@ -120,7 +146,7 @@ strong{
   color: #0a1d39;
 }
 #contact .white-bg {
-  background: rgba(255,255,255,0.80);
+  background: rgba(238,234,255,0.80);
   margin-top: 5%;
   border-radius: 5px;
   padding-top: 20px;
@@ -133,6 +159,7 @@ strong{
   color: #214a87;
 }
 footer {
+  background-color: #dadded;
   padding: 20px 0;
 }
 footer .fa {
