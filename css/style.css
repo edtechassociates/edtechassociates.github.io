@@ -14,6 +14,11 @@ html, body {
 img {
   width: 100%;
 }
+@media (max-width: 320px) {
+   .text-vcenter h1 { font-size: 3em; }
+   .text-vcenter h3 { font-size: 1.5em; }
+   p { font-size: 1em; }
+}
 .h3 {
   font-weight: lighter;
   color: #93b4c5;
@@ -104,6 +109,7 @@ strong{
 #our-mission {
   background-color: #214a87;
   color: #ffffff;
+  width: 100%;
 }
 #our-mission .fa {
   border: 2px solid #FFFFFF;
