@@ -14,7 +14,7 @@ html, body {
 img {
   width: 100%;
 }
-@media only screen and (max-width: 320px) {
+@media (max-width: 320px) {
    .text-vcenter h1 { font-size: 3em; }
    .text-vcenter h3 { font-size: 1.5em; }
    p { font-size: 1em; }
@@ -105,6 +105,7 @@ strong{
   background: rgba(238,234,255,0.60);
   border-radius: 5px;
   padding: 20px;
+  margin: 10px;
 }
 #our-mission {
   background-color: #214a87;
