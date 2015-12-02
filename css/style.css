@@ -15,8 +15,8 @@ img {
   width: 100%;
 }
 @media (max-width: 320px) {
-   .text-vcenter h1 { font-size: 3em; }
-   .text-vcenter h3 { font-size: 1.5em; }
+   h1 { font-size: 3em; }
+   h3 { font-size: 1.5em; }
    p { font-size: 1em; }
 }
 .h3 {
@@ -68,13 +68,13 @@ hr {
   vertical-align: middle;
   color: #000000;
 }
-.text-vcenter h1 {
+h1 {
   font-size: 4.5em;
   font-weight: 700;
   margin: 0;
   padding: 0;
 }
-.text-vcenter h3 {
+h3 {
   padding: 5px;
   line-height: 30px;
 }
