@@ -14,10 +14,23 @@ html, body {
 img {
   width: 100%;
 }
-@media (max-width: 320px) {
-   h1 { font-size: 3em; }
-   h3 { font-size: 1.5em; }
-   p { font-size: 1em; }
+@media screen and (max-width: 480px) {
+   h1 { font-size: 24pt; }
+   h3 { font-size: 18pt; }
+   p { font-size: 12pt; }
+}
+h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  padding: 5px;
+  line-height: 30px;
 }
 .h3 {
   font-weight: lighter;
@@ -28,6 +41,10 @@ p {
 }
 a:hover {
   text-decoration: none;
+}
+strong{
+  color: #ffffff;
+  font-weight: 600;
 }
 address {
   color: #000000;
@@ -68,20 +85,6 @@ hr {
   vertical-align: middle;
   color: #000000;
 }
-h1 {
-  font-size: 4.5em;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-}
-h3 {
-  padding: 5px;
-  line-height: 30px;
-}
-strong{
-  color: #ffffff;
-  font-weight: 600;
-}
 .padding-top{
   padding-top: 15px;
 }
@@ -89,6 +92,12 @@ strong{
   padding-bottom: 15px;
 }
 /* additional sections */
+
+@media screen and (max-width: 480px){
+  #home {
+    background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/home_sm.jpg) no-repeat center center fixed;
+  }
+}
 #home {
   background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/home.jpg) no-repeat center center fixed; 
   display: table;
@@ -302,5 +311,5 @@ footer .fa:hover {
 }
 
 .invalid {
-  border: 5px solid #ffdddd;
+  border: 2px solid rgba(234, 19, 24, 0.5);
 }
