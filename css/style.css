@@ -300,3 +300,7 @@ footer .fa:hover {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.invalid {
+  border: 5px solid #ffdddd;
+}
