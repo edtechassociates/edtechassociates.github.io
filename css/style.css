@@ -20,19 +20,19 @@ img {
    p { font-size: 12pt; }
 }
 h1 {
-  font-size: 4.5em;
+  font-size: 48pt;
   font-weight: 700;
   margin: 0;
   padding: 0;
 }
 h2 {
-  font-size: 3em;
+  font-size: 36pt;
 }
 h3 {
   padding: 5px;
   line-height: 30px;
 }
-.h3 {
+.h4 {
   font-weight: lighter;
   color: #93b4c5;
 }
@@ -77,7 +77,6 @@ address {
 hr {
   border-color: #9faec4;
 }
-
 /* vertical-centered text */
 .text-vcenter {
   margin-top: 20%;
@@ -92,7 +91,6 @@ hr {
   padding-bottom: 15px;
 }
 /* additional sections */
-
 @media screen and (max-width: 480px){
   #home {
     background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/home_sm.jpg) no-repeat center center fixed;
