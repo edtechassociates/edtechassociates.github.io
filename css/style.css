@@ -64,6 +64,9 @@ address {
 .navbar li {
   color: #214a87;
 }
+.navbar li .text-secondary {
+  color: #0d4b3b;
+}
 .btn-primary {
   color: #fff;
   background-color: #68aa98;
