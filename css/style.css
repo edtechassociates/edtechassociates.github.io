@@ -39,6 +39,10 @@ h3 {
 p {
   font-size: 1.2em;
 }
+.small {
+  font-size: 1.05em;
+  line-height: 20px;
+}
 a:hover {
   text-decoration: none;
 }
@@ -171,7 +175,7 @@ hr {
 #contact img {
   width: 100%;
 }
-#contact a, #contact p {
+#contact a {
   color: #214a87;
 }
 footer {
