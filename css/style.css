@@ -136,12 +136,12 @@ hr {
   width: 140px;
 }
 #solution {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/solution.jpeg) no-repeat center center fixed;
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/solution.jpg) no-repeat center center fixed;
   color: #000000;
   width: 100%;
 }
 #solution .white-bg {
-  background: rgba(238,234,255,0.60);
+  background: rgba(238,234,255,0.85);
   border-radius: 5px;
   padding: 20px;
 }
