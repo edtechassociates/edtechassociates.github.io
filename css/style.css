@@ -125,9 +125,15 @@ img {
   padding: 20px;
 }
 #our-mission {
-  background-color: #214a87;
+  background: #214a87; 
+  display: table;
   color: #ffffff;
+  position: relative;
   width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #our-mission .fa {
   border: 2px solid #FFFFFF;
