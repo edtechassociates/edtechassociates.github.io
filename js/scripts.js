@@ -3,10 +3,6 @@ var text = $('#statusText');
 text.hide();
  icon.hide();
 
-if (window.location.protocol != "https:") {
- window.location.protocol = "https";
- }
-
 failureIconClass = "fa fa-exclamation-circle";
 successIconClass = "fa fa-check-circle";
 failureTextClass = "text-danger";
