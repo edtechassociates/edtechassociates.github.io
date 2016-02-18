@@ -292,8 +292,8 @@ footer .fa:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-#connie {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/connie_prof.jpg) no-repeat center center fixed; 
+/*#anna {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/anna_prof.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -302,7 +302,7 @@ footer .fa:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
 #mel {
   background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/mel_prof.jpg) no-repeat center center fixed; 
   display: table;
