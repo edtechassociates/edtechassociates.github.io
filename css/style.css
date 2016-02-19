@@ -65,12 +65,22 @@ address {
 .navbar {
   background-color: #dadded;
   border-color: #9f8ec4;
+  margin-left: -10px;
 }
 .navbar li {
   color: #214a87;
+  float: right;
+  vertical-align: middle;
 }
 .navbar li .text-secondary {
   color: #0d4b3b;
+}
+.navbar li:first-child {
+  float: left;
+  width: 8%;
+  height: auto;
+  margin: 0;
+  padding-left: -12px;
 }
 .btn-primary {
   color: #fff;
@@ -123,6 +133,9 @@ img {
   background: rgba(238,234,255,0.60);
   border-radius: 5px;
   padding: 20px;
+}
+#home .white-bg img {
+  width: 65%;
 }
 #our-mission {
   background: #214a87; 
@@ -292,17 +305,6 @@ footer .fa:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-/*#anna {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/anna_prof.jpg) no-repeat center center fixed; 
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
 #mel {
   background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/mel_prof.jpg) no-repeat center center fixed; 
   display: table;
@@ -357,4 +359,17 @@ footer .fa:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+#anna {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/anna_prof.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  bottom: 0;
+  right: 0;
 }
