@@ -171,6 +171,9 @@ img {
   border-radius: 5px;
   padding: 20px;
 }
+#solution p {
+  font-size: 12pt;
+}
 #solution .fa {
   border: 2px solid #000000;
   border-radius: 50%;
@@ -181,6 +184,9 @@ img {
   text-align: center;
   vertical-align: middle;
   width: 140px;
+}
+.embed-responsive {
+  border: 2px solid #333333;
 }
 #team {
   background: #9faec4; 
