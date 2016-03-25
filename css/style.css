@@ -17,13 +17,10 @@ html, body {
    p { font-size: 12pt; }
 }
 h1 {
-  font-size: 48pt;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
+  font-size: 36pt;
 }
 h2 {
-  font-size: 36pt;
+  font-size: 30pt;
 }
 h3 {
   padding: 5px;
@@ -66,31 +63,29 @@ address {
   background-color: #dadded;
   border-color: #9f8ec4;
   margin-left: -10px;
+  min-height: 75px;
+}
+.navbar-brand img {
+  max-height: 50px;
+  width: auto;
+  margin-left: 20px;
 }
 .navbar li {
   color: #214a87;
-  float: right;
-  vertical-align: middle;
+  padding-top: 11px;
 }
 .navbar li .text-secondary {
   color: #0d4b3b;
 }
-.navbar li:first-child {
-  float: left;
-  width: 8%;
-  height: auto;
-  margin: 0;
-  padding-left: -12px;
-}
 .btn-primary {
   color: #fff;
-  background-color: #68aa98;
-  border-color: #4a907d;
+  background-color: #214a87;
+  border-color: #143464;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #41796a;
-  border-color: #68aa98;
+  background-color: #143464;
+  border-color: #214a87;
 }
 hr {
   border-color: #9faec4;
@@ -296,6 +291,17 @@ footer .fa:hover {
 }
 #sean {
   background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/sean_prof.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#connie {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/connie_prof.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
