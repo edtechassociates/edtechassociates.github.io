@@ -173,6 +173,7 @@ img {
 }
 #solution li {
   font-size: 12pt;
+  text-align: left;
 }
 #solution .fa {
   border: 2px solid #000000;
@@ -187,6 +188,29 @@ img {
 }
 .embed-responsive {
   border: 2px solid #333333;
+}
+#research {
+  background: #68aa98; 
+  display: table;
+  color: #ffffff;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#testimonials {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/solution.jpg) no-repeat center center fixed;
+  color: #000000;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #team {
   background: #9faec4; 
