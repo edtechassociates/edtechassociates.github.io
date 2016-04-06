@@ -96,7 +96,7 @@ img {
   width: 100%;
 }
 /* additional sections */
-@media (max-width: 480px){
+@media screen and (max-width: 480px){
   #home {
     background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/home_sm.jpg) no-repeat center center fixed;
   }
@@ -112,6 +112,7 @@ img {
   -o-background-size: cover;
   background-size: cover;
   color: #ffffff;
+  padding-top: 3%;
 }
 #home .white-bg {
   background: rgba(238,234,255,0.60);
