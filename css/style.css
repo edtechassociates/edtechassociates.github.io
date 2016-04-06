@@ -12,15 +12,15 @@ html, body {
   width: 100%;
 }
 @media screen and (max-width: 480px) {
-   h1 { font-size: 24pt; }
-   h3 { font-size: 18pt; }
-   p { font-size: 12pt; }
+  h1 { font-size: 24pt; }
+  h3 { font-size: 18pt; }
+  p { font-size: 12pt; }
 }
 h1 {
   font-size: 36pt;
 }
 h2 {
-  font-size: 30pt;
+  font-size: 5vh;
 }
 h3 {
   padding: 5px;
