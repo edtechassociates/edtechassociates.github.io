@@ -11,35 +11,28 @@ html, body {
   height: 100%;
   width: 100%;
 }
-@media screen and (max-width: 480px) {
-  h1 { font-size: 24pt; }
-  h3 { font-size: 18pt; }
-  p { font-size: 12pt; }
-}
 h1 {
-  font-size: 36pt;
-}
-h2 {
-  font-size: 5vh;
+  font-size: 4.8vh;
 }
 h3 {
+  font-size: 2.55vh;
   padding: 5px;
   line-height: 30px;
 }
 h4 {
-  font-size: 16pt;
+  font-size: 2.2vh;
   line-height: 30px;
 }
 .h4 {
-  font-size: 16pt;
+  font-size: 2.2vh;
   font-weight: lighter;
   color: #93b4c5;
 }
 p {
-  font-size: 14pt;
+  font-size: 1.9vh;
 }
 .small {
-  font-size: 1.05em;
+  font-size: 1.6vh;
   line-height: 20px;
 }
 a:hover {
@@ -48,10 +41,6 @@ a:hover {
 strong{
   color: #214a87;
   font-weight: 600;
-}
-address {
-  color: #000000;
-  font-size: 1.2em;
 }
 .pad-section {
   padding: 50px 0;
@@ -172,7 +161,7 @@ img {
   padding: 20px;
 }
 #solution li {
-  font-size: 12pt;
+  font-size: 1.65vh;
   text-align: left;
 }
 #solution .fa {
@@ -212,7 +201,7 @@ blockquote {
   margin-left: 25px;
   position: relative;
   font-family: Arial;
-  font-size: 16px;
+  font-size: 2.2vh;
   color: #222;
   text-align: justify;
   border-left: 15px solid #cc2418;
@@ -229,7 +218,7 @@ blockquote::before{
 }
 blockquote footer{
   background: transparent;
-  font-size: 12pt;
+  font-size: 1.7vh;
   color: #444;
 }
 #testimonials {
@@ -446,7 +435,7 @@ footer .fa:hover {
   bottom: 0;
   right: 0;
 }
-/* Scoll arrown for bio pagse */
+/* Scoll arrown for bio pages */
 @-moz-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
