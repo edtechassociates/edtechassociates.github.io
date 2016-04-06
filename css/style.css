@@ -112,7 +112,7 @@ img {
   -o-background-size: cover;
   background-size: cover;
   color: #ffffff;
-  padding-top: 3%;
+  padding-top: 30px;
 }
 #home .white-bg {
   background: rgba(238,234,255,0.60);
