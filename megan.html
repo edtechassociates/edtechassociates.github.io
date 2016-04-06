@@ -8,29 +8,6 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <script src="jquery-1.12.0.min.js">
-    //this is where we apply opacity to the arrow
-    $(window).scroll( function(){
-
-      //get scroll position
-      var topWindow = $(window).scrollTop();
-      //multiply by 1.5 so the arrow will become transparent half-way up the page
-      var topWindow = topWindow * 1.5;
-      
-      //get height of window
-      var windowHeight = $(window).height();
-          
-      //set position as percentage of how far the user has scrolled 
-      var position = topWindow / windowHeight;
-      //invert the percentage
-      position = 1 - position;
-
-      //define arrow opacity as based on how far up the page the user has scrolled
-      //no scrolling = 1, half-way up the page = 0
-      $('.arrow').css('opacity', position);
-
-    });
-  </script>
 </head>
 <body>
 
@@ -52,6 +29,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#our-mission">Our Mission</a></li>
           <li><a href="index.html#solution">Solution</a></li>
+          <li><a href="index.html#research">Research</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
           <li><a href="index.html#team">Team</a></li>
           <li class="text-secondary"><a href="index.html#contact"><strong>Contact</strong></a></li>
         </ul>
