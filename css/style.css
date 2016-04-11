@@ -95,12 +95,6 @@ hr {
 img {
   width: 100%;
 }
-/* additional sections */
-@media screen and (max-width: 480px){
-  #home {
-    background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/home_sm.jpg) no-repeat center center fixed;
-  }
-}
 #home {
   background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/home2.jpg) no-repeat center center fixed; 
   display: table;

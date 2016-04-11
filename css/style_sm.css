@@ -1,6 +1,8 @@
 ﻿#home {
   background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/home_sm.jpg) no-repeat center center fixed;
-  padding-top: 10vh;
+  padding-top: 20vh;
+  height: 100%;
+  width: 100%;
 }
 #home .white-bg img {
   width: 95%;
