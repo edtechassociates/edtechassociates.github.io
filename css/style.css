@@ -363,7 +363,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #luiz {
-  background: url(C:/wamp/www/meganh.github.io/images/luiz_prof.jpg) no-repeat center center fixed;
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/luiz_prof.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
