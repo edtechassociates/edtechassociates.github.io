@@ -305,7 +305,7 @@ footer .fa:hover {
   color: #ffffff;
 }
 #bio a:hover {
-  color: #68aa98;
+  color: #93b4c5;
 }
 #david {
   background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/david_prof.jpg) no-repeat center center fixed; 
@@ -353,6 +353,17 @@ footer .fa:hover {
 }
 #connie {
   background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/connie_prof.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#luiz {
+  background: url(C:/wamp/www/meganh.github.io/images/luiz_prof.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
