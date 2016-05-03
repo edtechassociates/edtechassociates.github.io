@@ -340,17 +340,6 @@ footer .fa:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-#sean {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/sean_prof.jpg) no-repeat center center fixed; 
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 #connie {
   background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/connie_prof.jpg) no-repeat center center fixed; 
   display: table;
