@@ -1,12 +1,14 @@
+"use strict";
+
 var icon = $('#statusIcon');
 var text = $('#statusText');
 text.hide();
- icon.hide();
+icon.hide();
 
-failureIconClass = "fa fa-exclamation-circle";
-successIconClass = "fa fa-check-circle";
-failureTextClass = "text-danger";
-successTextClass = "text-success";
+var failureIconClass = "fa fa-exclamation-circle";
+var successIconClass = "fa fa-check-circle";
+var failureTextClass = "text-danger";
+var successTextClass = "text-success";
 
 function isEmail(email) {
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -71,23 +73,19 @@ function sendMail() {
 
 
     if(valid) {
+        var form = {
+            "email": email.val(),
+            "contact": name.val(),
+            "message": message.val()
+        };
+        //actually send the email to our AWS Lambda Function.
         $.ajax({
-                type: "POST",
-                url: "https://mandrillapp.com/api/1.0/messages/send.json",
-                data: {
-                    key: "_UhvviMfxE6oL0g8St7k9Q",
-                    message: {
-                        from_email: email.val(),
-                        to: [{
-                            email: "info@edtechassociates.com",
-                            type: "to"
-                        }],
-                        autotext: "true",
-                        subject: name.val() + " Has Submitted The Form",
-                        html: message.val()
-                    }
-                }
-            })
+            "type": "POST",
+            "url": "https://fanwuf5r0h.execute-api.us-east-1.amazonaws.com/prod/catchAndSendEmails",
+            "dataType": "json",
+            "contentType": "application/json",
+            "data": JSON.stringify(form)
+        })
             .done(function () {
                 toggleClasses(true);
                 text.html("Email has successfully sent!");
@@ -104,4 +102,3 @@ function sendMail() {
             })
     }
 }
-
