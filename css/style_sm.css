@@ -1,5 +1,5 @@
 ﻿#home {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/home2_sm.jpg) no-repeat center center fixed;
+  background: url(http://edtechassociates.github.io/images/home2_sm.jpg) no-repeat center center fixed;
   padding-top: 20vh;
   height: 100%;
   width: 100%;
@@ -8,7 +8,7 @@
   width: 95%;
 }
 #solution {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/solution_sm.jpg) no-repeat center center fixed;
+  background: url(http://edtechassociates.github.io/images/solution_sm.jpg) no-repeat center center fixed;
   color: #000000;
   display: table;
   height: 100%;
@@ -20,7 +20,7 @@
   background-size: cover;
 }
 #testimonials {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/testimonials_sm.jpg) no-repeat center center fixed;
+  background: url(http://edtechassociates.github.io/images/testimonials_sm.jpg) no-repeat center center fixed;
   color: #000000;
   display: table;
   height: 75%;
@@ -32,7 +32,7 @@
   background-size: cover;
 }
 #contact {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/indianapolis_sm.jpg) no-repeat center center fixed;
+  background: url(http://edtechassociates.github.io/images/indianapolis_sm.jpg) no-repeat center center fixed;
   display: table;
   height: 800px;
   position: relative;

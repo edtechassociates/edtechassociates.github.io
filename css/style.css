@@ -96,7 +96,7 @@ img {
   width: 100%;
 }
 #home {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/home2.jpg) no-repeat center center fixed; 
+  background: url(http://edtechassociates.github.io/images/home2.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -139,7 +139,7 @@ img {
   width: 140px;
 }
 #solution {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/solution.jpg) no-repeat center center fixed;
+  background: url(http://edtechassociates.github.io/images/solution.jpg) no-repeat center center fixed;
   color: #000000;
   display: table;
   height: 100%;
@@ -217,7 +217,7 @@ blockquote footer{
   color: #444;
 }
 #testimonials {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/testimonials.jpg) no-repeat center center fixed;
+  background: url(http://edtechassociates.github.io/images/testimonials.jpg) no-repeat center center fixed;
   color: #000000;
   display: table;
   height: 75%;
@@ -251,7 +251,7 @@ blockquote footer{
   border-radius: 7px;
 }
 #contact {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/indianapolis.jpg) no-repeat center center fixed; 
+  background: url(http://edtechassociates.github.io/images/indianapolis.jpg) no-repeat center center fixed;
   display: table;
   height: 800px;
   position: relative;
@@ -308,7 +308,7 @@ footer .fa:hover {
   color: #93b4c5;
 }
 #david {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/david_prof.jpg) no-repeat center center fixed; 
+  background: url(http://edtechassociates.github.io/images/david_prof.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -319,7 +319,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #ken {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/ken_prof.jpg) no-repeat center center fixed; 
+  background: url(http://edtechassociates.github.io/images/ken_prof.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -330,7 +330,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #kevin {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/kevin_prof.jpg) no-repeat center center fixed; 
+  background: url(http://edtechassociates.github.io/images/kevin_prof.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -341,7 +341,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #connie {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/connie_prof.jpg) no-repeat center center fixed; 
+  background: url(http://edtechassociates.github.io/images/connie_prof.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -352,7 +352,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #luiz {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/luiz_prof.jpg) no-repeat center center fixed;
+  background: url(http://edtechassociates.github.io/images/luiz_prof.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -363,7 +363,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #mel {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/mel_prof.jpg) no-repeat center center fixed; 
+  background: url(http://edtechassociates.github.io/images/mel_prof.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -374,7 +374,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #mark {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/mark_prof.jpg) no-repeat center center fixed; 
+  background: url(http://edtechassociates.github.io/images/mark_prof.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -385,7 +385,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #brett {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/brett_prof.jpg) no-repeat center center fixed; 
+  background: url(http://edtechassociates.github.io/images/brett_prof.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -396,7 +396,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #anton {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/anton_prof.jpg) no-repeat center center fixed; 
+  background: url(http://edtechassociates.github.io/images/anton_prof.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -407,7 +407,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #megan {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/megan_prof.jpg) no-repeat center center fixed; 
+  background: url(http://edtechassociates.github.io/images/megan_prof.jpg) no-repeat center center fixed;
   display: table;
   height: 100vh;
   position: relative;
@@ -418,7 +418,7 @@ footer .fa:hover {
   background-size: cover;
 }
 #anna {
-  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/anna_prof.jpg) no-repeat center center fixed; 
+  background: url(http://edtechassociates.github.io/images/anna_prof.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -484,7 +484,7 @@ footer .fa:hover {
   margin-top: 95vh;
   width: 40px;
   height: 40px;
-  background-image: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/arrows.png);
+  background-image: url(http://edtechassociates.github.io/images/arrows.png);
   background-size: contain;
 }
 .bounce {
