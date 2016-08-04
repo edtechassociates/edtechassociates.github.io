@@ -3,17 +3,20 @@
 
     function EmailService($resource) {
         var email = {};
-        email.endpoint = $resource("https://fanwuf5r0h.execute-api.us-east-1.amazonaws.com/prod/catchAndSendEmails");
-        email.form = {};
+        email.resource = $resource("https://fanwuf5r0h.execute-api.us-east-1.amazonaws.com/prod/catchAndSendEmails");
         email.regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         email.message = {};
         email.message.class = "";
         email.message.html = "";
         email.message.icon = "";
         email.error = {};
+        /* A string that represents the message shown if the email fails validity checks */
         email.error.email = "Your email appears to be in the wrong format. It should look like 'user@domain.com'.";
+        /* A string that represents the message shown if the name fails validity checks */
         email.error.contact = "You must include a name for when we reach out to you.";
+        /* A string that represents the message shown if the message fails validity checks */
         email.error.message = "You must include a message so that we know what you are interested in.";
+        /* A string that represents the message shown if the email fails to send due to an error from another server/service outside of our site */
         email.error.server = "Something went wrong. Please try again in a few minutes.";
         email.error.class = "text-danger";
         email.error.icon = "fa fa-exclamation-circle";
@@ -23,7 +26,7 @@
         email.success.icon = "fa fa-check-circle";
         email.invalid = {};
         email.invalid.email = false;
-        email.invalid.name = false;
+        email.invalid.contact = false;
         email.invalid.message = false;
 
         email.supportFunctions = {};
@@ -31,16 +34,15 @@
             return email.regex.test(email.form.email);
         };
         email.supportFunctions.resetForm = function () {
+            email.form = {};
             email.form.email = "";
             email.form.contact = "";
             email.form.message = "";
         };
         email.supportFunctions.formValidator = function () {
-            var valid = true;
-            var invalidItem = "";
+            var invalidItem = null;
 
             if(email.form.message === "") {
-                valid = false;
                 invalidItem = "message";
                 email.supportFunctions.toggleInvalid("message", true);
             } else {
@@ -48,7 +50,6 @@
             }
 
             if(email.form.contact === "") {
-                valid = false;
                 invalidItem = "contact";
                 email.supportFunctions.toggleInvalid("contact", true);
             } else {
@@ -56,65 +57,43 @@
             }
 
             if(email.form.email === "" || !email.supportFunctions.isEmail(email.form.email)) {
-                valid = false;
                 invalidItem = "email";
                 email.supportFunctions.toggleInvalid("email", true);
             } else {
                 email.supportFunctions.toggleInvalid("email", false);
             }
-            if (invalid) {
-                email.supportFunctions.presentError(invalidItem);
-            }
 
-            return valid;
+            if (invalidItem) {
+                email.supportFunctions.presentError(invalidItem);
+                return false;
+            } else {
+                return true;
+            }
         };
         email.supportFunctions.toggleInvalid = function (type, state) {
             email.invalid[type] = state;
         };
         email.supportFunctions.presentError = function (type) {
-            email.message = {
-                class: email.error.class,
-                html: email.error[type],
-                icon: email.error.icon
-            }
+            email.message.class = email.error.class;
+            email.message.html = email.error[type];
+            email.message.icon = email.error.icon;
         };
-        email.supportFunctions.sendSuccess = function () {
-            email.message = {
-                class: email.success.class,
-                html: email.success.html,
-                icon: email.success.icon
-            };
+        email.supportFunctions.sendSuccess = function (results) {
+            email.message.class = email.success.class;
+            email.message.html = email.success.html;
+            email.message.icon = email.success.icon;
             email.supportFunctions.resetForm();
+            console.log("success status", results)
         };
-        email.supportFunctions.sendError = function () {
+        email.supportFunctions.sendError = function (results) {
             email.supportFunctions.presentError("server");
-            email.supportFunctions.resetForm();
+            console.log("error status", results);
         };
-        email.supportFunctions.sendEmail = function () {
+        email.sendEmail = function () {
+            console.log("validator", email.supportFunctions.formValidator());
             if(email.supportFunctions.formValidator()) {
                 //actually send the email to our AWS Lambda Function.
-                email.endpoint.post(email.form, email.supportFunctions.sendSuccess, email.supportFunctions.sendError);
-                $.ajax({
-                    "type": "POST",
-                    "url": email.endpoint,
-                    "dataType": "json",
-                    "contentType": "application/json",
-                    "data": JSON.stringify(email.form)
-                })
-                    .done(function () {
-                        toggleClasses(true);
-                        text.html("Email has successfully sent!");
-                        $('#emailForm').trigger("reset");
-                    })
-                    .fail(function () {
-                        toggleClasses(false);
-                        text.html("Something went wrong. Please try again in a few minutes.");
-
-                    })
-                    .always(function () {
-                        text.show();
-                        icon.show();
-                    })
+                email.resource.save(email.form, email.supportFunctions.sendSuccess, email.supportFunctions.sendError);
             }
         };
         email.supportFunctions.resetForm();
