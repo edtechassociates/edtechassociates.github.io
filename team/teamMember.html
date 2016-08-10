@@ -1,0 +1,50 @@
+<!-- first section - Home -->
+<div id="{{teamMember}}">
+    <div ng-class="DataService[teamMember].image.class">
+        <div class="text-vcenter">
+            <img ng-src="{{ DataService[teamMember].image.source }}" />
+        </div>
+    </div>
+    <div class="arrow bounce"></div>
+</div>
+<!-- /first section -->
+
+<!-- third section - Services -->
+<div id="bio">
+    <div class="container">
+        <div class="text-center padding-top">
+            <div class="col-sm-5 col-sm-offset-1"><h4>LOCATION <span class="h4">{{ DataService[teamMember].location }}</span></h4></div>
+            <div class="col-sm-5"><h4>COLLEGE <span class="h4">{{ DataService[teamMember].education }}</span></h4></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-bottom">
+                <hr />
+                <div ng-bind-html="DataService[teamMember].bio"></div>
+                <a ng-href="{{ DataService[teamMember].linkdin }}" target="_blank">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-linkedin fa-stack-1x"></i>
+                    </span>
+                </a>
+                <a ng-href="{{ DataService[teamMember].instagram }}" target="_blank" ng-if="DataService[teamMember].instagram">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-instagram fa-stack-1x"></i>
+                    </span>
+                </a>
+                <a ng-href="{{ DataService[teamMember].twitter }}" target="_blank">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x"></i>
+                    </span>
+                </a>
+                <a ng-href="{{ DataService[teamMember].facebook }}" target="_blank">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span>
+                </a>
+                <hr />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /third section -->

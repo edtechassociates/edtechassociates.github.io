@@ -8,18 +8,16 @@
                 <span class="icon-bar"></span>
             </button>
             <div>
-                <a class="navbar-brand" href="index.html"><img src="http://edtechassociates.github.io/images/logo_edtech.png"></a>
+                <a class="navbar-brand" ui-sref="base.home"><img src="/images/logo_edtech.png"></a>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-main">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#home" data-toggle="collapse" data-target=".navbar-collapse">Home</a></li>
-                <li><a href="#our-mission" data-toggle="collapse" data-target=".navbar-collapse">Our Mission</a></li>
-                <li><a href="#solution" data-toggle="collapse" data-target=".navbar-collapse">Solution</a></li>
-                <li><a href="#research" data-toggle="collapse" data-target=".navbar-collapse">Research</a></li>
-                <li><a href="#testimonials" data-toggle="collapse" data-target=".navbar-collapse">Testimonials</a></li>
-                <li><a href="#team" data-toggle="collapse" data-target=".navbar-collapse">Team</a></li>
-                <li class="text-secondary"><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse"><strong>Contact</strong></a></li>
+                <li><a ui-sref="base.home" ui-sref-active="active">Home</a></li>
+                <li><a ui-sref="base.product" ui-sref-active="active">Product</a></li>
+                <li><a ui-sref="base.tech" ui-sref-active="active">Technology</a></li>
+                <li><a ui-sref="base.research" ui-sref-active="active">Research</></li>
+                <li><a ui-sref="base.team" ui-sref-active="active">Team</a></li>
             </ul>
         </div>
     </div>
