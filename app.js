@@ -30,6 +30,33 @@
                     }
                 }
             })
+            .state("base.product.cy", {
+                url: "^/product/courtyard",
+                views: {
+                    "@": {
+                        templateUrl: "/product/courtyard.html",
+                        controller: "Product"
+                    }
+                }
+            })
+            .state("base.product.rc", {
+                url: "^/product/resource-center",
+                views: {
+                    "@": {
+                        templateUrl: "/product/resourceCenter.html",
+                        controller: "Product"
+                    }
+                }
+            })
+            .state("base.product.ah", {
+                url: "^/product/academic-hall",
+                views: {
+                    "@": {
+                        templateUrl: "/product/academicHall.html",
+                        controller: "Product"
+                    }
+                }
+            })
             .state("base.tech", {
                 url: "^/technology",
                 views: {
@@ -208,6 +235,7 @@
             /* Controllers */
             "EdTech.Home",
             "EdTech.Team",
+            "EdTech.Product",
             /* Services */
             "EdTech.DataService",
             "EdTech.EmailService",
