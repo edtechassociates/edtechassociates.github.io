@@ -38,6 +38,9 @@ p {
 a:hover {
   text-decoration: none;
 }
+a:visited, a:active {
+  color: #fff;
+}
 strong{
   color: #214a87;
   font-weight: 600;
@@ -49,22 +52,51 @@ strong{
   width: 100%;
 }
 .navbar {
-  background-color: #dadded;
-  border-color: #9f8ec4;
+  background-color: #214a87;
+  border-color: #aaa;
   margin-left: -10px;
   min-height: 75px;
+  z-index: 5;
+}
+.demo {
+  position: fixed;
+  float: right;
+  background-color: #cc2418;
+  border-radius: 50%;
+  height: 110px;
+  width: 110px;
+  top: -0.5vh;
+  right: -0.5vw;
+  z-index: 6;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer; 
+}
+.demo p {
+  color: #fff;
+  vertical-align: middle;
+  padding: 25px 15px;
+}
+.demo a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.navbar-brand {
+  padding: 0px;
 }
 .navbar-brand img {
-  max-height: 50px;
+  max-height: 60px;
   width: auto;
   margin-left: 20px;
 }
-.navbar li {
-  color: #214a87;
-  padding-top: 11px;
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+  position: relative;
+  margin: 10px 0px 0px 10px;
 }
-.navbar li .text-secondary {
-  color: #0d4b3b;
+.navbar-default .navbar-nav>li>a:hover {
+  color: #aaa;
+  vertical-align: middle;
 }
 .btn-primary {
   color: #fff;
@@ -78,6 +110,10 @@ strong{
 }
 hr {
   border-color: #9faec4;
+}
+.background {
+  z-index: -1;
+  position: fixed;
 }
 /* vertical-centered text */
 .text-vcenter {
@@ -95,189 +131,6 @@ hr {
 img {
   width: 100%;
 }
-#home {
-  background: url(/images/home2.jpg) no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #ffffff;
-  padding-top: 30px;
-}
-#home .white-bg {
-  background: rgba(238,234,255,0.60);
-  border-radius: 5px;
-  padding: 20px;
-}
-#home .white-bg img {
-  width: 65%;
-}
-#our-mission {
-  background: #214a87; 
-  display: table;
-  color: #ffffff;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#our-mission .fa {
-  border: 2px solid #FFFFFF;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 60px;
-  height: 140px;
-  line-height: 140px;
-  text-align: center;
-  vertical-align: middle;
-  width: 140px;
-}
-#solution {
-  background: url(/images/solution.jpg) no-repeat center center fixed;
-  color: #000000;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#solution .white-bg {
-  background: rgba(238,234,255,0.85);
-  border-radius: 5px;
-  padding: 20px;
-}
-#solution li {
-  font-size: 1.65vh;
-  text-align: left;
-}
-#solution .fa {
-  border: 2px solid #000000;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 60px;
-  height: 140px;
-  line-height: 140px;
-  text-align: center;
-  vertical-align: middle;
-  width: 140px;
-}
-.embed-responsive {
-  border: 2px solid #333333;
-}
-#research {
-  background: #8895a7; 
-  display: table;
-  color: #000000;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#research img {
-  width: auto;
-  max-height: 120px;
-  padding-bottom: 10px;
-}
-blockquote {
-  display:block;
-  background: transparent;
-  padding: 15px 20px 5px 45px;
-  margin-left: 25px;
-  position: relative;
-  font-family: Arial;
-  font-size: 2.2vh;
-  color: #222;
-  text-align: justify;
-  border-left: 15px solid #cc2418;
-}
-blockquote::before{
-  content: "\201C";
-  font-family: Georgia;
-  font-size: 60px;
-  font-weight: bold;
-  color: #666;
-  position: absolute;
-  left: 10px;
-  top: 4px;
-}
-blockquote footer{
-  background: transparent;
-  font-size: 1.7vh;
-  color: #444;
-}
-#testimonials {
-  background: url(/images/testimonials.jpg) no-repeat center center fixed;
-  color: #000000;
-  display: table;
-  height: 75%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#testimonials .white-bg {
-  background: rgba(238,234,255,0.85);
-  border-radius: 5px;
-  padding: 20px;
-}
-#team {
-  background: #9faec4; 
-  display: table;
-  height: 800px;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#team .row {
-  padding-bottom: 30px;
-}
-#team img {
-  border-radius: 7px;
-}
-#contact {
-  background: url(/images/indianapolis.jpg) no-repeat center center fixed;
-  display: table;
-  height: 800px;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #000000;
-}
-#contact .fa {
-  color: #0a1d39;
-}
-#contact .white-bg {
-  background: rgba(238,234,255,0.80);
-  margin-top: 5%;
-  border-radius: 5px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-#contact img {
-  width: 100%;
-}
-#contact a {
-  color: #214a87;
-}
 .invalid {
   border: 2px solid rgba(234, 19, 24, 0.5);
 }
@@ -293,20 +146,6 @@ footer .fa:hover {
   color: #306d9f;
 }
 /* profile styling */
-#bio {
-  background-color: #214a87;
-  color: #ffffff;
-}
-#bio h3 {
-  font-weight: bold;
-  color: #072839;
-}
-#bio a {
-  color: #ffffff;
-}
-#bio a:hover {
-  color: #93b4c5;
-}
 #david {
   background: url(/images/david_prof.jpg) no-repeat center center fixed;
   display: table;
@@ -317,118 +156,6 @@ footer .fa:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-#ken {
-  background: url(/images/ken_prof.jpg) no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#kevin {
-  background: url(/images/kevin_prof.jpg) no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#connie {
-  background: url(/images/connie_prof.jpg) no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#luiz {
-  background: url(/images/luiz_prof.jpg) no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#mel {
-  background: url(/images/mel_prof.jpg) no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#mark {
-  background: url(/images/mark_prof.jpg) no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#brett {
-  background: url(/images/brett_prof.jpg) no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#anton {
-  background: url(/images/anton_prof.jpg) no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#megan {
-  background: url(/images/megan_prof.jpg) no-repeat center center fixed;
-  display: table;
-  height: 100vh;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#anna {
-  background: url(/images/anna_prof.jpg) no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  bottom: 0;
-  right: 0;
 }
 /* Scoll arrown for bio pages */
 @-moz-keyframes bounce {

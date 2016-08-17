@@ -1,3 +1,4 @@
+<a herf="" class="demo"><p>Schedule<br>a Demo!</p></a>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -8,15 +9,23 @@
                 <span class="icon-bar"></span>
             </button>
             <div>
-                <a class="navbar-brand" ui-sref="base.home"><img src="/images/logo_edtech.png"></a>
+                <a class="navbar-brand" ui-sref="base.home"><img src="/images/logo_edtech_white.png"></a>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-main">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a ui-sref="base.home" ui-sref-active="active">Home</a></li>
-                <li><a ui-sref="base.product" ui-sref-active="active">Product</a></li>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a a href="#" ui-sref-active="active" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="base.product">Product Description</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Academic Hall</a></li>
+                        <li><a href="#">Courtyard</a></li>
+                        <li><a href="#">Resource Center</a></li>
+                    </ul>
+                </li>
                 <li><a ui-sref="base.tech" ui-sref-active="active">Technology</a></li>
-                <li><a ui-sref="base.research" ui-sref-active="active">Research</></li>
+                <li><a ui-sref="base.research" ui-sref-active="active">Research</a></li>
                 <li><a ui-sref="base.team" ui-sref-active="active">Team</a></li>
             </ul>
         </div>
