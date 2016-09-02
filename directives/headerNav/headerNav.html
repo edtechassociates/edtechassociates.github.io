@@ -15,18 +15,19 @@
         <div class="collapse navbar-collapse" id="navbar-collapse-main">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
-                    <a a href="#" ui-sref-active="active" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product <span class="caret"></span></a>
+                    <a href="" ui-sref-active="active" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="base.product">Product Description</li>
+                        <li><a ui-sref="base.product">Overview</li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Academic Hall</a></li>
-                        <li><a href="#">Courtyard</a></li>
-                        <li><a href="#">Resource Center</a></li>
+                        <li><a ui-sref="base.product.ah">Academic Hall</a></li>
+                        <li><a ui-sref="base.product.cy">Courtyard</a></li>
+                        <li><a ui-sref="base.product.rc">Resource Center</a></li>
                     </ul>
                 </li>
-                <li><a ui-sref="base.tech" ui-sref-active="active">Technology</a></li>
+                <!-- <li><a ui-sref="base.tech" ui-sref-active="active">Technology</a></li> -->
                 <li><a ui-sref="base.research" ui-sref-active="active">Research</a></li>
                 <li><a ui-sref="base.team" ui-sref-active="active">Team</a></li>
+                <li><a href="https://theconnectedcampus.blogspot.com/" target="_blank">Blog</a></li>
             </ul>
         </div>
     </div>

@@ -13,22 +13,31 @@ body {
   background: #ddd;
 }
 h1 {
-  margin-top: 5vh;
-  font-size: 4.8vh;
+  margin-top: 8vh;
+  font-size: 20vh;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Anton', sans-serif;
+}
+h2 {
+  margin-top: 8vh;
+  font-size: 13vh;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Anton', sans-serif;
 }
 h3 {
-  font-size: 2.55vh;
+  font-size: 4vh;
   padding: 5px;
+  text-align: center;
+  color: $ffffff;
   line-height: 30px;
+  font-family: 'Arial', sans-serif;
 }
 h4 {
   font-size: 2.2vh;
-  line-height: 30px;
-}
-.h4 {
-  font-size: 2.2vh;
-  font-weight: lighter;
-  color: #93b4c5;
+  text-align: center;
+  color: #214a87;
 }
 p {
   font-size: 1.9vh;
@@ -56,7 +65,7 @@ strong{
   width: 100%;
 }
 .navbar {
-  background-color: #214a87;
+  background-color: rgba(33, 74, 135, .8);
   border-color: #aaa;
   margin-left: -10px;
   min-height: 75px;
@@ -102,7 +111,22 @@ strong{
   color: #aaa;
   vertical-align: middle;
 }
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus {
+  color: #aaa;
+  background-color: transparent;
+}
+.nav .open>a, .nav .open>a:focus {
+  background-color: transparent;
+}
+.navbar-nav>li>.dropdown-menu, .dropdown-menu {
+  border-radius: 5px;
+  background-color: #eee;
+}
+.dropdown-menu li {
+  cursor: pointer;
+}
 .btn-primary {
+  border-radius: 50px;
   color: #fff;
   background-color: #214a87;
   border-color: #143464;
@@ -113,14 +137,30 @@ strong{
   border-color: #214a87;
 }
 hr {
-  border-color: #9faec4;
+  border-color: #cc2418;
 }
 .background {
   z-index: -1;
   position: fixed;
+  top: 0;
+}
+.header_title {
+  margin-top: 20vh;
+  width: auto;
+  max-height: 25vh;
+}
+.outer-container {
+  background-color: #ddd;
+  padding: 0;
+  margin: 0 0 25px 0;
 }
 .container {
-  padding-top: 12vh;
+  margin-top: 18.5vh;
+  padding-top: 12px;
+}
+.bio {
+  margin-top: 0px;
+  padding-top: 12px;
 }
 /* vertical-centered text */
 .text-vcenter {
@@ -137,6 +177,14 @@ hr {
 }
 img {
   width: 100%;
+}
+.research-img {
+  min-height: 5vh;
+  width: auto;
+}
+.testimonial p {
+  text-align: center;
+  font-size: 2.25vh;
 }
 .invalid {
   border: 2px solid rgba(234, 19, 24, 0.5);
@@ -163,6 +211,265 @@ footer .fa:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+#ken {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/ken_prof.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#kevin {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/kevin_prof.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#sean {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/sean_prof.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#connie {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/connie_prof.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#luiz {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/luiz_prof.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#mel {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/mel_prof.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#mark {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/mark_prof.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#brett {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/brett_prof.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#anton {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/anton_prof.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#megan {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/megan_prof.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#anna {
+  background: url(https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/anna_prof.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  bottom: 0;
+  right: 0;
+}
+/* FLIP CARDS */
+.flip-container {
+  perspective: 1000px;
+}
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+.flip-container, .front, .back {
+  width: 250px;
+  height: 250px;
+  margin: 0 33px 0 1.5px;
+}
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.front {
+  background: #0e2a54;
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+.back {
+  background: #f2f2f2;
+  transform: rotateY(180deg);
+  padding: 7px;
+}
+/* TEXT ON IMAGE ON HOVER */
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ul.img-list li {
+  display: inline-block;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 250px;
+}
+span.text-content {
+  background: rgba(30,30,30l,0.85);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 250px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;
+  opacity: 0;
+  -webkit-transition: opacity 850ms;
+  -moz-transition: opacity 850ms;
+  -o-transition: opacity 850ms;
+  transition: opacity 850ms;
+}
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+.hover-img {
+  padding: 0px;
+  height: 250px;
+  width: 250px;
+}
+/* Rotating home page phrases*/
+.fadeIn{
+  text-indent: 8px;
+  width: 80%;
+}
+.fadeIn span{
+  animation: fadeEffect 12.5s linear infinite 0s;
+  -ms-animation: fadeEffect 12.5s linear infinite 0s;
+  -webkit-animation: fadeEffect 12.5s linear infinite 0s;
+  color: #bbbbbb;
+  font-size: 4vh;
+  opacity: 0;
+  position: absolute;
+  margin: 50px 0 0 350px;
+}
+.fadeIn span:nth-child(2){
+  animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+  margin: 50px 0 0 300px;
+}
+.fadeIn span:nth-child(3){
+  animation-delay: 5s;
+  -ms-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  margin: 50px 0 0 250px;
+}
+.fadeIn span:nth-child(4){
+  animation-delay: 7.5s;
+  -ms-animation-delay: 7.5s;
+  -webkit-animation-delay: 7.5s;
+  margin: 50px 0 0 275px;
+}
+@-moz-keyframes fadeEffect{
+  0% { opacity: 0; }
+  5% { opacity: 0; -moz-transform: translateY(0px); }
+  10% { opacity: 1; -moz-transform: translateY(0px); }
+  25% { opacity: 1; -moz-transform: translateY(0px); }
+  30% { opacity: 0; -moz-transform: translateY(0px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-webkit-keyframes fadeEffect{
+  0% { opacity: 0; }
+  5% { opacity: 0; -webkit-transform: translateY(0px); }
+  10% { opacity: 1; -webkit-transform: translateY(0px); }
+  25% { opacity: 1; -webkit-transform: translateY(0px); }
+  30% { opacity: 0; -webkit-transform: translateY(0px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-ms-keyframes fadeEffect{
+  0% { opacity: 0; }
+  5% { opacity: 0; -ms-transform: translateY(0px); }
+  10% { opacity: 1; -ms-transform: translateY(0px); }
+  25% { opacity: 1; -ms-transform: translateY(0px); }
+  30% { opacity: 0; -ms-transform: translateY(0px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
 }
 /* Scoll arrown for bio pages */
 @-moz-keyframes bounce {
