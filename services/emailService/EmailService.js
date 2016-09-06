@@ -90,7 +90,6 @@
             console.log("error status", results);
         };
         email.sendEmail = function () {
-            console.log("validator", email.supportFunctions.formValidator());
             if(email.supportFunctions.formValidator()) {
                 //actually send the email to our AWS Lambda Function.
                 email.resource.save(email.form, email.supportFunctions.sendSuccess, email.supportFunctions.sendError);

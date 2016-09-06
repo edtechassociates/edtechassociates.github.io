@@ -21,6 +21,15 @@
                     }
                 }
             })
+            .state("base.contact", {
+                url: "^/contact",
+                views: {
+                    "@": {
+                        templateUrl: "/contact/contact.html",
+                        controller: "Contact"
+                    }
+                }
+            })
             .state("base.product", {
                 url: "^/product",
                 views: {
@@ -236,6 +245,7 @@
             "EdTech.Home",
             "EdTech.Team",
             "EdTech.Product",
+            "EdTech.Contact",
             /* Services */
             "EdTech.DataService",
             "EdTech.EmailService",
