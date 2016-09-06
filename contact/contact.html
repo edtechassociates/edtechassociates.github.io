@@ -1,11 +1,70 @@
-<!--
-<form ng-submit="EmailService.sendEmail">
-    <input ng-model="EmailService.form.email">
-    <input ng-model="EmailService.form.contact">
-    <input ng-model="EmailService.form.message">
-</form>
-<div ng-class="{{ email.message.class }}">
-    <div ng-class="{{ email.message.icon }}"></div>//presents the correct icon
-    <div ng-bind-html="email.message.html"></div> //this presents any error messages wherever this is put
+<img src="images/contact_header.jpg" class="background">
+<img src="images/contact_header.png" class="header_title">
+<div class="outer-container">
+	<div class="container">
+		<div class="col-lg-4 col-sm-12 text-center">
+        	<img src="https://s3.amazonaws.com/persist-edtech-static-assets/infosite/images/logo_edtech.png" class="padding-bottom">
+        	<p class="small">With EdTech Experts located in Indianapolis, Dallas, Los Angeles, and Boca Raton, FL</p>
+        	<a href="https://twitter.com/EdTechAssoc" target="_blank">
+          		<span class="fa-stack fa-2x">
+            		<i class="fa fa-circle-thin fa-stack-2x"></i>
+            		<i class="fa fa-twitter fa-stack-1x"></i>
+          		</span>
+       		</a>
+        	<a href="https://www.facebook.com/EdTechAssociates/?fref=ts" target="_blank">
+          		<span class="fa-stack fa-2x">
+            		<i class="fa fa-circle-thin fa-stack-2x"></i>
+            		<i class="fa fa-facebook fa-stack-1x"></i>
+          		</span>
+        	</a>
+        	<a href="https://www.linkedin.com/company/education-technology-associates" target="_blank">
+          		<span class="fa-stack fa-2x">
+            		<i class="fa fa-circle-thin fa-stack-2x"></i>
+            		<i class="fa fa-linkedin fa-stack-1x"></i>
+          		</span>
+        	</a>
+        	<a href="http://google.com/+Edtechassociates" target="_blank">
+          		<span class="fa-stack fa-2x">
+            		<i class="fa fa-circle-thin fa-stack-2x"></i>
+            		<i class="fa fa-google-plus fa-stack-1x"></i>
+          		</span>
+        	</a>
+	        <p class="padding-top"><a href="mailto:info@edtechassociates.com"><i class="fa fa-envelope"></i> info@edtechassociates.com</a><p>
+	        <p><i class="fa fa-mobile fa-lg"></i> 317.983.1382</p>
+      	</div>
+      	<hr class="hidden-md hidden-lg" />
+      	<div class="col-lg-6 col-lg-offset-1 col-sm-12">
+	        <h3 class="text-center">Get in contact with us!</h3>
+	        <p class="text-center">Schedule a demo today by filling out the form below</p>
+	        <div class="text-center">
+	        	<span id="statusIcon" class="text-center"></span>
+	        	<span id="statusText" class="text-center"></span>
+	        </div>
+        	<form id="emailForm" class="form-horizontal" ng-submit="EmailService.sendEmail">
+          		<div class="form-group">
+           			<label class="col-sm-2 control-label">*Email:</label>
+            		<div class="col-sm-10">
+              			<input class="form-control" name="email" id="email" value="" ng-model="EmailService.form.email"/>
+            		</div>
+          		</div>
+          		<div class="form-group">
+            		<label class="col-sm-2 control-label">*Name:</label>
+            		<div class="col-sm-10">
+              			<input class="form-control" name="name" id="name" value="" ng-model="EmailService.form.contact"/>
+            		</div>
+          		</div>
+          		<div class="form-group">
+            		<label class="col-sm-2 control-label">*Message:</label>
+            		<div class="col-sm-10">
+              			<textarea class="form-control" row="5" name="message" id="message" ng-model="EmailService.form.message"></textarea>
+            		</div>
+          		</div>
+          		<input class="btn btn-primary pull-right" type="button" value="Submit" onClick="sendMail()">
+          		<div ng-class="{{ email.message.class }}">
+				    <div ng-class="{{ email.message.icon }}"></div><!-- presents the correct icon -->
+				    <div ng-bind-html="email.message.html"></div><!-- this presents any error messages wherever this is put -->
+				</div>
+        	</form>
+      	</div>
+  	</div>
 </div>
--->
