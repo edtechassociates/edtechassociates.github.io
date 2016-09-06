@@ -40,7 +40,7 @@
 	        	<span id="statusIcon" class="text-center"></span>
 	        	<span id="statusText" class="text-center"></span>
 	        </div>
-        	<form id="emailForm" class="form-horizontal" ng-submit="EmailService.sendEmail">
+        	<form id="emailForm" class="form-horizontal" ng-submit="EmailService.sendEmail()">
           		<div class="form-group">
            			<label class="col-sm-2 control-label">*Email:</label>
             		<div class="col-sm-10">
@@ -59,10 +59,10 @@
               			<textarea class="form-control" row="5" name="message" id="message" ng-model="EmailService.form.message"></textarea>
             		</div>
           		</div>
-          		<input class="btn btn-primary pull-right" type="button" value="Submit" onClick="sendMail()">
-          		<div ng-class="{{ email.message.class }}">
-				    <div ng-class="{{ email.message.icon }}"></div><!-- presents the correct icon -->
-				    <div ng-bind-html="email.message.html"></div><!-- this presents any error messages wherever this is put -->
+          		<input class="btn btn-primary pull-right" type="submit" value="Submit">
+          		<div>
+				    <span ng-class="'{{ EmailService.message.icon }}'"></span><!-- presents the correct icon -->
+				    <div ng-class="'{{ EmailService.message.class }}'" ng-bind-html="EmailService.message.html"></div><!-- this presents any error messages wherever this is put -->
 				</div>
         	</form>
       	</div>
