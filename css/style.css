@@ -43,21 +43,20 @@ strong{
   font-weight: 600;
 }
 .pad-section {
-  padding: 50px 0;
-}
-.pad-section img {
-  width: 100%;
+  padding: 0px 0px 50px 0px;
 }
 .navbar {
-  background-color: #dadded;
+  background-color: #eeeeee;
   border-color: #9f8ec4;
-  margin-left: -10px;
+  padding: 10px 10% 5px 10%;
   min-height: 75px;
 }
+.navbar-brand {
+  padding: 0px;
+}
 .navbar-brand img {
-  max-height: 50px;
+  max-height: 55px;
   width: auto;
-  margin-left: 20px;
 }
 .navbar li {
   color: #214a87;
@@ -96,30 +95,32 @@ img {
   width: 100%;
 }
 #home {
-  background: url(http://edtechassociates.github.io/images/home2.jpg) no-repeat center center fixed;
+  background: url(../images/home.jpg) no-repeat center center;
   display: table;
-  height: 100%;
+  height: 75vh;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #ffffff;
-  padding-top: 30px;
+  color: #000000;
+  padding-top: 15%;
 }
-#home .white-bg {
-  background: rgba(238,234,255,0.60);
-  border-radius: 5px;
-  padding: 20px;
+#home img {
+  height: 30vh;
+  width: auto;
 }
-#home .white-bg img {
-  width: 65%;
+#presenting {
+  background: #ffffff;
+  position: relative;
+  color: #000000;
+  margin: 25px;
 }
 #our-mission {
-  background: #214a87; 
+  background: #ffffff; 
   display: table;
-  color: #ffffff;
+  color: #000000;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -128,7 +129,7 @@ img {
   background-size: cover;
 }
 #our-mission .fa {
-  border: 2px solid #FFFFFF;
+  border: 2px solid #000000;
   border-radius: 50%;
   display: inline-block;
   font-size: 60px;
@@ -139,7 +140,7 @@ img {
   width: 140px;
 }
 #solution {
-  background: url(http://edtechassociates.github.io/images/solution.jpg) no-repeat center center fixed;
+  background-color: #ffffff;
   color: #000000;
   display: table;
   height: 100%;
@@ -149,11 +150,6 @@ img {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-#solution .white-bg {
-  background: rgba(238,234,255,0.85);
-  border-radius: 5px;
-  padding: 20px;
 }
 #solution li {
   font-size: 1.65vh;
@@ -174,7 +170,7 @@ img {
   border: 2px solid #333333;
 }
 #research {
-  background: #8895a7; 
+  background: #ffffff; 
   display: table;
   color: #000000;
   position: relative;
@@ -184,7 +180,7 @@ img {
   -o-background-size: cover;
   background-size: cover;
 }
-#research img {
+.research-img {
   width: auto;
   max-height: 120px;
   padding-bottom: 10px;
@@ -201,23 +197,13 @@ blockquote {
   text-align: justify;
   border-left: 15px solid #cc2418;
 }
-blockquote::before{
-  content: "\201C";
-  font-family: Georgia;
-  font-size: 60px;
-  font-weight: bold;
-  color: #666;
-  position: absolute;
-  left: 10px;
-  top: 4px;
-}
 blockquote footer{
   background: transparent;
   font-size: 1.7vh;
   color: #444;
 }
 #testimonials {
-  background: url(http://edtechassociates.github.io/images/testimonials.jpg) no-repeat center center fixed;
+  background-color: #ffffff;
   color: #000000;
   display: table;
   height: 75%;
@@ -228,13 +214,11 @@ blockquote footer{
   -o-background-size: cover;
   background-size: cover;
 }
-#testimonials .white-bg {
-  background: rgba(238,234,255,0.85);
-  border-radius: 5px;
-  padding: 20px;
+#testimonials .fa {
+  color: #5e5e5e
 }
 #team {
-  background: #9faec4; 
+  background: #ffffff; 
   display: table;
   height: 800px;
   position: relative;
@@ -251,7 +235,7 @@ blockquote footer{
   border-radius: 7px;
 }
 #contact {
-  background: url(http://edtechassociates.github.io/images/indianapolis.jpg) no-repeat center center fixed;
+  background: url(../images/indianapolis.jpg);
   display: table;
   height: 800px;
   position: relative;
@@ -262,21 +246,17 @@ blockquote footer{
   background-size: cover;
   color: #000000;
 }
+#contact.pad-section {
+  padding-top: 10%;
+}
 #contact .fa {
   color: #0a1d39;
-}
-#contact .white-bg {
-  background: rgba(238,234,255,0.80);
-  margin-top: 5%;
-  border-radius: 5px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 #contact img {
   width: 100%;
 }
 #contact a {
-  color: #214a87;
+  color: #0a1d39;
 }
 .invalid {
   border: 2px solid rgba(234, 19, 24, 0.5);
@@ -306,6 +286,9 @@ footer .fa:hover {
 }
 #bio a:hover {
   color: #93b4c5;
+}
+.names {
+  margin-top: 15%;
 }
 #david {
   background: url(http://edtechassociates.github.io/images/david_prof.jpg) no-repeat center center fixed;
