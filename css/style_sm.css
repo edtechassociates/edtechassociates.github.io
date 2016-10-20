@@ -1,14 +1,21 @@
 ﻿#home {
-  background: url(http://edtechassociates.github.io/images/home2_sm.jpg) no-repeat center center fixed;
+  background: url(../images/home_sm.jpg) no-repeat;
   padding-top: 20vh;
   height: 100%;
   width: 100%;
 }
-#home .white-bg img {
-  width: 95%;
+#home h2 {
+  font-size: 1.5em;
+}
+#presenting {
+  margin: 5px;
+}
+#presenting img {
+  width: 100%;
+  height: auto;
 }
 #solution {
-  background: url(http://edtechassociates.github.io/images/solution_sm.jpg) no-repeat center center fixed;
+  background-color: #ffffff;
   color: #000000;
   display: table;
   height: 100%;
@@ -20,7 +27,7 @@
   background-size: cover;
 }
 #testimonials {
-  background: url(http://edtechassociates.github.io/images/testimonials_sm.jpg) no-repeat center center fixed;
+  background-color: #ffffff;
   color: #000000;
   display: table;
   height: 75%;
@@ -32,7 +39,7 @@
   background-size: cover;
 }
 #contact {
-  background: url(http://edtechassociates.github.io/images/indianapolis_sm.jpg) no-repeat center center fixed;
+  background-color: #ffffff;
   display: table;
   height: 800px;
   position: relative;
@@ -42,4 +49,7 @@
   -o-background-size: cover;
   background-size: cover;
   color: #000000;
+}
+.names {
+  margin-top: 40%;
 }
